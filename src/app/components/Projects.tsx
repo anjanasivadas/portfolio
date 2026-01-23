@@ -6,9 +6,10 @@ const projects = [
     description:
       "A live weather app built with React and OpenWeatherMap API. Shows temperature, humidity, wind speed, and dynamic backgrounds.",
     github: "https://github.com/anjanasivadas/weather-app",
-    live: "https://weather-app-9yv2.vercel.app/"
+    live: "https://weather-app-9yv2.vercel.app/"  // ✅ use this URL
   }
 ];
+
 
 export default function Projects() {
   return (
