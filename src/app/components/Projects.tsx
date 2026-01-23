@@ -1,24 +1,17 @@
-"use client";
-
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "Bookstore (E-commerce)",
-    description: "A full-stack online bookstore built with React, Node.js, and MongoDB. Users can browse books, add to cart, and make secure purchases.",
-    link: "#"
-  },
-  {
-    title: "Order Tracking (Blockchain)",
-    description: "A blockchain-based order tracking system to securely track product orders, ensuring transparency and reliability in supply chain management.",
-    link: "#"
-  },
-  {
-    title: "Todo App",
-    description: "A simple web application to manage daily tasks, built using React and Tailwind CSS.",
-    link: "#"
+    title: "WeatherApp247",
+    description:
+      "A live weather app built with React and OpenWeatherMap API. Shows temperature, humidity, wind speed, and dynamic backgrounds.",
+    github: "https://github.com/anjanasivadas/weather-app",
+    live: "https://weatherapp247.vercel.app/"
   }
 ];
+
+
 
 export default function Projects() {
   return (
@@ -43,7 +36,29 @@ export default function Projects() {
           >
             <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
             <p className="text-gray-300 mb-3">{proj.description}</p>
-            <a href={proj.link} className="text-blue-400 hover:underline">View Project</a>
+            {/* Use Next.js Link for internal navigation */}
+            <div className="flex gap-4 mt-4">
+              {proj.github && (
+                <Link
+                  href={proj.github}
+                  target="_blank"
+                  className="text-blue-400 hover:underline"
+                >
+                  GitHub
+                </Link>
+              )}
+
+              {proj.live && (
+                <Link
+                  href={proj.live}
+                  target="_blank"
+                  className="text-green-400 hover:underline"
+                >
+                  Live Demo
+                </Link>
+              )}
+            </div>
+
           </motion.div>
         ))}
       </div>
