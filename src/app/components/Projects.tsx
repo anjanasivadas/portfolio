@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const projects = [
   {
@@ -7,11 +6,9 @@ const projects = [
     description:
       "A live weather app built with React and OpenWeatherMap API. Shows temperature, humidity, wind speed, and dynamic backgrounds.",
     github: "https://github.com/anjanasivadas/weather-app",
-    live: "https://weatherapp247.vercel.app/"
+    live: "https://weather-app-9yv2.vercel.app/"
   }
 ];
-
-
 
 export default function Projects() {
   return (
@@ -36,26 +33,28 @@ export default function Projects() {
           >
             <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
             <p className="text-gray-300 mb-3">{proj.description}</p>
-            {/* Use Next.js Link for internal navigation */}
+
             <div className="flex gap-4 mt-4">
               {proj.github && (
-                <Link
+                <a
                   href={proj.github}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
                 >
                   GitHub
-                </Link>
+                </a>
               )}
 
               {proj.live && (
-                <Link
+                <a
                   href={proj.live}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-green-400 hover:underline"
                 >
                   Live Demo
-                </Link>
+                </a>
               )}
             </div>
 
