@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 
 const projects = [
+    {
+    title: "BookCart",
+    description:
+      "A full-stack web application for managing and browsing books with features like add, update, delete, and cart functionality. Built using Django and SQLite.",
+    github: "https://github.com/anjanasivadas/bookcart", 
+    live: "https://anjanasivadas.pythonanywhere.com/"
+  }
   {
     title: "WeatherApp247",
     description:
