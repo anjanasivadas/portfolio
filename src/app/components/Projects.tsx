@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
+    title: "CareerNest",
+    description:
+      "A Django-based job portal for posting and managing jobs efficiently. Features include job posting, applications, and dashboard management.",
+    github: "https://github.com/anjanasivadas/CareerNest",
+    live: "https://anjanaes.pythonanywhere.com/"
+   },
+    {
     title: "BookCart",
     description:
       "A full-stack web application for managing and browsing books with features like add, update, delete, and cart functionality. Built using Django and SQLite.",
