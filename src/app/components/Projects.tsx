@@ -22,13 +22,13 @@ const projects = [
     github: "https://github.com/anjanasivadas/weather-app",
     live: "https://weather-app-9yv2.vercel.app/"
   },
-  // {
-  //   title: "Todo App",
-  //   description:
-  //     "A simple and responsive Todo app built with React. Allows adding, deleting, and marking tasks as completed.",
-  //   github: "https://github.com/anjanasivadas/TOdoApp",
-  //   live: "https://t-odo-app-five.vercel.app/"
-  // }
+  {
+    title: "Todo App",
+    description:
+      "A simple and responsive Todo app built with React. Allows adding, deleting, and marking tasks as completed.",
+    github: "https://github.com/anjanasivadas/TOdoApp",
+    live: "https://t-odo-app-five.vercel.app/"
+  }
 ];
 
 
